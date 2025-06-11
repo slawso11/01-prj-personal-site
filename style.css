@@ -7,6 +7,7 @@ body {
   color: #222;                    /* Dark text for good contrast */
   margin: 0;                      /* Remove default margin */
   padding: 0;                     /* Remove default padding */
+  text-align: center;             /* Center all text */
 }
 
 /* Style for each section to add spacing and background */
@@ -17,6 +18,20 @@ section {
   max-width: 600px;               /* Limit section width for readability */
   border-radius: 8px;             /* Rounded corners */
   box-shadow: 0 2px 8px rgba(0,0,0,0.05); /* Soft shadow for depth */
+}
+
+/* Center images and lists inside sections */
+section img, section ul {
+  display: block;           /* Make image and list a block element */
+  margin-left: auto;        /* Auto margin left */
+  margin-right: auto;       /* Auto margin right */
+}
+
+/* Center the photo in the hero section */
+#hero img {
+  display: block;           /* Make the image a block element */
+  margin-left: auto;        /* Auto margin left */
+  margin-right: auto;       /* Auto margin right */
 }
 
 /* Style for main headings */
